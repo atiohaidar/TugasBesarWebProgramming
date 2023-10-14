@@ -1,24 +1,23 @@
 {
-  "name": "myapp",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tugasbesarwebprogramming",
+  "version": "1.0.0",
+  "description": "Ini tugas besar WebPro",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atiohaidar/TugasBesarWebProgramming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atiohaidar/TugasBesarWebProgramming/issues"
+  },
+  "homepage": "https://github.com/atiohaidar/TugasBesarWebProgramming#readme",
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   }
 }
