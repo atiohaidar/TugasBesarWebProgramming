@@ -8,7 +8,6 @@ app.use(express.static('views/Login_Register'));
 
 
 app.get('/login', (req,res)=>{
-
     res.render('Login_Register/login_register') 
 })
 app.use(express.static('views/Main_Page'));
