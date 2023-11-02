@@ -33,28 +33,49 @@ app.get('/gallery', (req,res)=>{
 
 
 app.get('/list-event', (req,res)=>{
-    res.render('List_Event_Page/index') 
+    res.render('List_Event_Page/index',{
+        title: "List Event",
+    layout: "layouts/main-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
 })
 
 
 app.get('/my-event', (req,res)=>{
-    res.render('MyEvent/index') 
+    res.render('MyEvent/index',
+    {
+        title: "My Event",
+    layout: "layouts/main-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
 })
 
 app.get('/profile-event', (req,res)=>{
-    res.render('P_Event/index') 
+    res.render('P_Event/index',{
+        title: "Provile Event",
+    layout: "layouts/main-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
 })
 
 
 
 app.get('/join-event', (req,res)=>{
-    res.render('Join_Event/index') 
+    res.render('Join_Event/index',{
+        title: "Join Event",
+    layout: "layouts/main-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
 })
 
 
 
 app.get('/buat-event', (req,res)=>{
-    res.render('Buat_Event/index') 
+    res.render('Buat_Event/index',{
+        title: "Buat Event",
+    layout: "layouts/main-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
 })
 
 app.listen(port, () => {
