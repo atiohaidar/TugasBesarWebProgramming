@@ -57,6 +57,7 @@ $(function() {
                         required: true,
                         email: true
                     },
+                    cv:"required",
                     AlasanJoin: {
                         required: true,
                         minlength: 5
@@ -65,6 +66,7 @@ $(function() {
                 messages: {
                     name: "Please enter your Name",
                     email: "Please enter a valid email address",
+                    cv: "Please Input your CV",
                     AlasanJoin: "Please enter a Reason"
                 }
             });
