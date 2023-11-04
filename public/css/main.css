@@ -656,7 +656,7 @@ section {
   }
 
   .mobile-nav-active {
-    overflow: hidden;
+    overflow: show;
   }
 
   .mobile-nav-active .navbar {
