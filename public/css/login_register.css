@@ -4,6 +4,39 @@
 * {
 	box-sizing: border-box;
 }
+.center-form {
+	display: flex;
+	justify-content: space-between;
+}
+.center-form-left, .center-form-right {
+	flex: 1;
+}
+
+label {
+	display: inline-block;
+	width: 80px;
+  }
+.gender-input {
+	display: flex;
+	align-items: center;
+}
+
+.gender-input label {
+	margin-right: 5px; 
+}
+
+.gender-input input[type="radio"] {
+	margin: 10px;; 
+}
+.center-form {
+	display: flex;
+	justify-content: space-between;
+}
+.center-form-left, .center-form-right {
+	flex: 1;
+	margin: 10px; 
+	padding: 10px;
+}
 
 body {
 	background: #af878b;
