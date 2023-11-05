@@ -77,6 +77,13 @@ app.get('/buat-event', (req,res)=>{
     phone_number : '+62 858 1564 8255'
     }) 
 })
+app.get('/profile', (req,res)=>{
+    res.render('Profile/Profile.ejs', {
+        title: "Profile",
+    layout: "layouts/bs-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
+})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}, Link= http://localhost:${port}/`)
