@@ -78,9 +78,9 @@ app.get('/buat-event', (req,res)=>{
     }) 
 })
 app.get('/profile', (req,res)=>{
-    res.render('Profile_User/Profile.ejs', {
+    res.render('Profile/Profile.ejs', {
         title: "Profile",
-    layout: "layouts/main-layout",
+    layout: "layouts/bs-layout",
     phone_number : '+62 858 1564 8255'
     }) 
 })
