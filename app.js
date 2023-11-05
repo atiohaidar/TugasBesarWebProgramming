@@ -80,7 +80,7 @@ app.get('/buat-event', (req,res)=>{
 app.get('/profile', (req,res)=>{
     res.render('Profile/Profile.ejs', {
         title: "Profile",
-    layout: "layouts/bs-layout",
+    layout: "layouts/main-layout",
     phone_number : '+62 858 1564 8255'
     }) 
 })
