@@ -45,7 +45,7 @@
     flex-direction: column;
   }
   
-  /* Gaya umum untuk modal */
+  /* Tampilan logout */
   .modal {
     display: none;
     position: fixed;
@@ -56,7 +56,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  /* Gaya untuk konten modal */
+  /* Tampilan log out */
   .modal-content {
     position: absolute;
     top: 50%;
@@ -69,7 +69,7 @@
     align-items: center;
   }
   
-  /* Gaya untuk tombol Cancel */
+  /* Tampilan untuk Cancel */
   .cancelButton {
     background-color: #ccc;
     border: none;
@@ -84,7 +84,7 @@
     background-color: #aaa;
   }
   
-  /* Gaya untuk tombol YES */
+  /* tampilan untuk YES */
   .yesButton {
     background-color: #4CAF50;
     border: none;
