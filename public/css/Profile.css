@@ -66,7 +66,7 @@
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    ;
+    align-items: center;
   }
   
   /* Gaya untuk tombol Cancel */
@@ -77,6 +77,7 @@
     padding: 10px 20px;
     margin-right: 10px;
     cursor: pointer;
+    width: min-content;
   }
   
   .cancelButton:hover {
@@ -90,6 +91,7 @@
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
+    width: min-content;
   }
   
   .yesButton:hover {
