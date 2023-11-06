@@ -84,7 +84,23 @@ app.get('/profile', (req,res)=>{
     phone_number : '+62 858 1564 8255'
     }) 
 })
+app.get('/sekretaris', (req,res)=>{
+    res.render('sekreDash/sekreDash.ejs', {
+        title: "Sekretaris ",
+    layout: "layouts/bs-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
+    
+})
 
+app.get('/admin', (req,res)=>{
+    res.render('adminTventDash/adminSWDash.ejs', {
+        title: "Admin ",
+    layout: "layouts/main-layout",
+    phone_number : '+62 858 1564 8255'
+    }) 
+    
+})
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}, Link= http://localhost:${port}/`)
   })
