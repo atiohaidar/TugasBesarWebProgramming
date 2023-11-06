@@ -39,7 +39,7 @@ label {
 }
 body {
 	background: #af878b;
-	background-image: url(../Img/Background.jpg);
+	background-image: url(../img/Background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;	
 	fill-opacity: 0.5;
