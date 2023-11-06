@@ -11,6 +11,7 @@ function openLogoutModal() {
 
 // Fungsi untuk menyembunyikan modal
 function closeLogoutModal() {
+    console.log("hallo")
     logoutModal.style.display = 'none';
 }
 
