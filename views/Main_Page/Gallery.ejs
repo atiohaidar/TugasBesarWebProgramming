@@ -9,6 +9,7 @@
           <p>PKKMB 2019</p>
         </div>
       </div>
+
       <div class="gallery-item">
         <img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Image 2">
         <div class="overlay">
@@ -330,7 +331,75 @@
               <p>Seminat Kecerdasan Buatan 2022</p>
             </div>
           </div>
-
+          
+          <div class="pagination" id="pagination"></div>
     </div>
-    
+    <br>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  // Number of items per page
+  var itemsPerPage = 18;
+
+  // Get the total number of gallery items
+  var totalItems = $(".gallery-item").length;
+
+  // Calculate the total number of pages
+  var totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  // Display the first page initially
+  showPage(1);
+
+  // Function to display a specific page
+  function showPage(page) {
+    $(".gallery-item").hide();
+    var startIndex = (page - 1) * itemsPerPage;
+    var endIndex = startIndex + itemsPerPage;
+    $(".gallery-item").slice(startIndex, endIndex).show();
+  }
+
+  // Function to generate pagination buttons
+  function generatePaginationButtons(currentPage) {
+    $("#pagination").empty();
+
+    var startPage, endPage;
+
+    if (totalPages <= 10) {
+      startPage = 1;
+      endPage = totalPages;
+    } else {
+      if (currentPage <= 6) {
+        startPage = 1;
+        endPage = 10;
+      } else if (currentPage + 4 >= totalPages) {
+        startPage = totalPages - 9;
+        endPage = totalPages;
+      } else {
+        startPage = currentPage - 5;
+        endPage = currentPage + 4;
+      }
+    }
+
+    if (currentPage > 1) {
+      $("#pagination").append('<button onclick="showPage(' + (currentPage - 1) + ')">«</button>');
+    }
+
+    for (var i = startPage; i <= endPage; i++) {
+      $("#pagination").append('<button onclick="showPage(' + i + ')"' + (i === currentPage ? ' class="active"' : '') + '>' + i + '</button>');
+    }
+
+    if (currentPage < totalPages) {
+      $("#pagination").append('<button onclick="showPage(' + (currentPage + 1) + ')">»</button>');
+    }
+  }
+
+  // Call the function to generate pagination buttons
+  generatePaginationButtons(1);
+
+  // Handle button clicks
+  $(document).on("click", "#pagination button", function () {
+    var currentPage = parseInt($(this).text());
+    generatePaginationButtons(currentPage);
+  });
+</script>
