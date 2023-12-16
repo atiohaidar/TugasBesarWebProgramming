@@ -66,16 +66,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 prodiOptions = ['Teknik Informatika', 'Perhotelan', 'Sistem Informasi Akuntansi'];
                 break;
             default:
-                // Handle the default case if needed
                 break;
         }
 
-        // Call the addProdiOptions function or replace it with your logic
         addProdiOptions(prodiOptions);
     });
 });
 
-// Define the addProdiOptions function or replace it with your logic
 function addProdiOptions(options) {
     var prodiSelect = document.getElementById('prodi');
     options.forEach(function (option) {
