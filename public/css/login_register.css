@@ -292,3 +292,55 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Additional styling for the dropdown arrow */
+.form-control:after {
+    content: "\25BC";  /* Unicode character for a down arrow */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box; /* Ensure consistent box-sizing for all elements */
+}
+
+/* Additional styling for the dropdown arrow */
+select:after {
+    content: "\25BC";  /* Unicode character for a down arrow */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Adjust spacing for prodi dropdown */
+#prodi {
+    margin-top: 0px;
+}

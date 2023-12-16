@@ -40,10 +40,24 @@
 					</div>
 				</div>
 				<div class="center-form-right">
-					<input type="text" id="fakultas" placeholder="Fakultas" />
-					<input type="text" id="prodi" placeholder="prodi" />
-					<input type="text" id="nim" placeholder="NIM" />
-					
+					<div class="form-group">
+						<select id="fakultas" placeholder="Fakultas">
+							<option value="" disabled selected>Select your faculty</option>
+							<option value="FTE">Fakultas Teknik Elektro</option>
+							<option value="FRI">Fakultas Rekayasa Industri</option>
+							<option value="FIF">Fakultas Informatika</option>
+							<option value="FIK">Fakultas Industri Kreatif</option>
+							<option value="FKB">Fakultas Komunikasi dan Bisnis</option>
+							<option value="FEB">Fakultas Ekonomi dan Bisnis</option>
+							<option value="FIT">Fakultas Ilmu Terapan</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select id="prodi" placeholder="Prodi">
+							<option value="" disabled selected>Select your program</option>
+						</select>
+						<input type="text" id="nim" placeholder="NIM" />
+					</div>
 				</div>
 			</div>
 			<br>
